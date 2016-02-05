@@ -9,6 +9,10 @@ class Zoo {
 		animaux = new LinkedList<Animal>();
 	}
 
+	public String getNom() {
+		return this.nom;
+	}
+
 	public int getAnimaux() {
 		return animaux.size();
 	}
@@ -25,6 +29,6 @@ class Zoo {
 
 	@Override
 	public String toString() {
-		return "Zoo " + this.nom + " contient " + animaux;
+		return "Zoo " + this.getNom() + " contient " + animaux;
 	}
 }

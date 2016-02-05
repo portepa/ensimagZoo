@@ -17,10 +17,10 @@ public class Animal {
 	}
 
 	public void crier() {
-		System.out.println(this.nom + " crie MEUUH");
+		System.out.println(this.getNom() + " crie.");
 	}
 
 	public String toString() {
-		return "Je suis " + this.nom + " et je pèse " + this.poids + " kilos.";
+		return "Je suis " + this.getNom() + " et je pèse " + this.getPoids() + " kilos.";
 	}
 }
