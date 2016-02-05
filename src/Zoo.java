@@ -27,6 +27,20 @@ class Zoo {
 		}
 	}
 
+	public void manger() {
+		for(Animal a : animaux) {
+			System.out.println(a.getNom() + " : " + a.getRegime().toString());
+		}
+	}
+
+	public int coutDeNourriture() {
+		int cout = 0;
+		for(Animal a : animaux) {
+			cout += a.coutDeNourriture();
+		}
+		return cout;
+	}
+
 	@Override
 	public String toString() {
 		return "Zoo " + this.getNom() + " contient " + animaux;

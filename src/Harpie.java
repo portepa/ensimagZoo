@@ -4,6 +4,7 @@ public class Harpie extends Animal {
 
 	public Harpie(String nom, int poids, String couleurDesPlumes) {
 		super(nom, poids);
+		this.setRegime(new Regime("Poissons", 11, 2));
 		this.couleurDesPlumes = couleurDesPlumes;
 	}
 
@@ -17,6 +18,6 @@ public class Harpie extends Animal {
 	}
 
 	public String toString() {
-		return "Je suis " + this.getNom() + " et je pèse " + this.getPoids() + " kilos.";
+		return "Je suis " + this.getNom() + " la Harpie et je pèse " + this.getPoids() + " kilos.";
 	}
 }

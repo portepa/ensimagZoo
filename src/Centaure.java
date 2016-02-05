@@ -4,6 +4,7 @@ public class Centaure extends Animal {
 
 	public Centaure(String nom, int poids, int vitesseDePointe) {
 		super(nom, poids);
+		this.setRegime(new Regime("Herbe", 7, 2 * this.getPoids()));
 		this.vitesseDePointe = vitesseDePointe;
 	}
 
@@ -17,6 +18,6 @@ public class Centaure extends Animal {
 	}
 
 	public String toString() {
-		return "Je suis " + this.getNom() + " et je pèse " + this.getPoids() + " kilos.";
+		return "Je suis " + this.getNom() + " le Centaure et je pèse " + this.getPoids() + " kilos.";
 	}
 }
